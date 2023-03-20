@@ -61,5 +61,6 @@ It's designed to be an easy to use, graphical alternative to command-line tools 
 %_man1dir/%name.1*
 
 %changelog
-* Mar 17 2023 Artem Semenov<semenovav@altlinux.org> 1.5-alt2
-- Initial build for Sisyphus
+* Mon Mar 20 2023 Artem Semenov <savoptik@altlinux.org> 1.5-alt2
+- 
+Initial build for Sisyphus
