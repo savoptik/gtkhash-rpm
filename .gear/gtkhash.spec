@@ -1,20 +1,20 @@
-%define _unpackaged_files_terminate_build 1
+%define _unpackaged_files_terminate_build 1
 
-Name: gtkhash
+Name: gtkhash
 Version: 1.5
-Release: alt2
+Release: alt2
 
-Summary:GtkHash is a desktop utility for computing message digests or checksums. 
+Summary:GtkHash is a desktop utility for computing message digests or checksums. 
 
-License: GPLv2
+License: GPLv2
 
-Group: Other
+Group: Other
 
-Url: https://github.com/tristanheaven/gtkhash
+Url: https://github.com/tristanheaven/gtkhash
 
-Source0: %name-%version.tar
+Source0: %name-%version.tar
 
-BuildRequires: libgtk+3-devel
+BuildRequires: libgtk+3-devel
 BuildRequires: libglib2-devel
 BuildRequires: Libgcrypt-devel
 BuildRequires: libnettle-devel
@@ -53,13 +53,13 @@ It's designed to be an easy to use, graphical alternative to command-line tools 
 %makeinstall_std
 
 %check
-  %make_build check
+  %make_build check
 
 %files
-%doc AUTHORS ChangeLog NEWS README
+%doc AUTHORS ChangeLog NEWS README
 %_bindir/*
 %_man1dir/%name.1*
 
 %changelog
-* Mar 17 2023 Artem Semenov<semenovav@altlinux.org> 1.5-alt2
-- Initial build for Sisyphus
+* Mar 17 2023 Artem Semenov<semenovav@altlinux.org> 1.5-alt2
+- Initial build for Sisyphus
