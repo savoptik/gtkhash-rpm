@@ -16,10 +16,11 @@ Source0: %name-%version.tar
 
 BuildRequires: libgtk+3-devel
 BuildRequires: libglib2-devel
-BuildRequires: Libgcrypt-devel
+BuildRequires: libgcrypt-devel
 BuildRequires: libnettle-devel
 BuildRequires: libssl-devel
 BuildRequires: libmbedtls-devel
+BuildRequires: libb2-devel
 BuildRequires: git
 BuildRequires: libkcapi-devel
 
