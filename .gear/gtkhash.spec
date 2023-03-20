@@ -22,6 +22,7 @@ BuildRequires: libssl-devel
 BuildRequires: libmbedtls-devel
 BuildRequires: libb2-devel
 BuildRequires: libnautilus-devel
+BuildRequires: libnemo-devel
 BuildRequires: mate-file-manager-devel
 BuildRequires: git
 BuildRequires: libkcapi-devel
