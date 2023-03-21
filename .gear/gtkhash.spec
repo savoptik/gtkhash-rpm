@@ -19,7 +19,6 @@ BuildRequires: libglib2-devel
 BuildRequires: libgcrypt-devel
 BuildRequires: libnettle-devel
 BuildRequires: libssl-devel
-BuildRequires: libmbedtls-devel
 BuildRequires: libb2-devel
 BuildRequires: libnautilus-devel
 BuildRequires: libnemo-devel
@@ -45,7 +44,6 @@ It's designed to be an easy to use, graphical alternative to command-line tools 
   %configure \
   --enable-libcrypto       \
   --enable-linux-crypto   \
-    --enable-mbedtls        \
     --enable-mhash          \
     --enable-nettle         \
     --enable-caja           \
