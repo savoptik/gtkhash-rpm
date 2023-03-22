@@ -28,6 +28,7 @@ BuildRequires: libkcapi-devel
 BuildRequires: libthunar-devel
 BuildRequires: librsvg-utils
 BuildRequires: libmbedtls13-devel
+BuildRequires: xvfb-run
 
 %description
   GtkHash is a desktop utility for computing message digests or checksums. Most well-known hash functions are supported, including MD5, SHA1, SHA2 (SHA256/SHA512), SHA3 and BLAKE2.
