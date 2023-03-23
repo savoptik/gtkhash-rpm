@@ -14,7 +14,7 @@ Url: https://github.com/tristanheaven/gtkhash
 
 Source0: %name-%version.tar
 
-BuildRequires: libgtk4-devel
+BuildRequires: libgtk+3-devel
 BuildRequires: libglib2-devel
 BuildRequires: libgcrypt-devel
 BuildRequires: libnettle-devel
@@ -29,6 +29,8 @@ BuildRequires: libthunar-devel
 BuildRequires: librsvg-utils
 BuildRequires: libmbedtls13-devel
 BuildRequires: xvfb-run
+BuildRequires: /proc
+BuildRequires: icon-theme-hicolor
 
 %description
   GtkHash is a desktop utility for computing message digests or checksums. Most well-known hash functions are supported, including MD5, SHA1, SHA2 (SHA256/SHA512), SHA3 and BLAKE2.
