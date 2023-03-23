@@ -46,6 +46,7 @@ It's designed to be an easy to use, graphical alternative to command-line tools 
 %build
 %autoreconf
   %configure \
+  --enable-glib-checksums \
   --enable-libcrypto       \
   --enable-linux-crypto   \
       --enable-mbedtls        \
@@ -65,9 +66,9 @@ It's designed to be an easy to use, graphical alternative to command-line tools 
   %make_build check
 
 %files
-%doc AUTHORS ChangeLog NEWS README
+%doc AUTHORS ChangeLog NEWS README.md
 %_bindir/*
-%_man1dir/%name.1*
+#%_man1dir/%name.1*
 
 %changelog
 * Mon Mar 20 2023 Artem Semenov <savoptik@altlinux.org> 1.5-alt2
