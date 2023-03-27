@@ -15,6 +15,7 @@ Url: https://github.com/tristanheaven/gtkhash
 Source0: %name-%version.tar
 
 BuildArch: noarch
+%define debug_package %{nil}
 
 BuildRequires: libgtk+3-devel
 BuildRequires: libglib2-devel
@@ -73,6 +74,12 @@ It's designed to be an easy to use, graphical alternative to command-line tools 
 %_libexecdir/*
 %_datadir/*
 #%_man1dir/%name.1*
+
+%set_verify_elf_method skip
+
+%add_debuginfo_skiplist %_bindir/*
+%add_debuginfo_skiplist %_libexecdir/*
+%add_debuginfo_skiplist %_datadir
 
 %changelog
 * Mon Mar 20 2023 Artem Semenov <savoptik@altlinux.org> 1.5-alt2
