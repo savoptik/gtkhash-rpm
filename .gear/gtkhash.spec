@@ -14,8 +14,8 @@ Url: https://github.com/tristanheaven/gtkhash
 
 Source0: %name-%version.tar
 
-BuildArch: noarch
-%define debug_package %{nil}
+#BuildArch: noarch
+#%%define debug_package %%{nil}
 
 BuildRequires: libgtk+3-devel
 BuildRequires: libglib2-devel
@@ -23,7 +23,7 @@ BuildRequires: libgcrypt-devel
 BuildRequires: libnettle-devel
 BuildRequires: libssl-devel
 BuildRequires: libb2-devel
-BuildRequires: libnautilus-devel
+#BuildRequires: libnautilus-devel
 BuildRequires: libnemo-devel
 BuildRequires: mate-file-manager-devel
 BuildRequires: git
@@ -56,7 +56,6 @@ It's designed to be an easy to use, graphical alternative to command-line tools 
     --enable-mhash          \
     --enable-nettle         \
     --enable-caja           \
-    --enable-nautilus       \
     --enable-nemo           \
     --enable-thunar         \
 
@@ -73,13 +72,13 @@ It's designed to be an easy to use, graphical alternative to command-line tools 
 %_bindir/*
 %_libexecdir/*
 %_datadir/*
-#%_man1dir/%name.1*
+#%%_man1dir/%%name.1*
 
-%set_verify_elf_method skip
+#%%set_verify_elf_method skip
 
-%add_debuginfo_skiplist %_bindir/*
-%add_debuginfo_skiplist %_libexecdir/*
-%add_debuginfo_skiplist %_datadir
+#%%add_debuginfo_skiplist %%_bindir/*
+#%%add_debuginfo_skiplist %%_libexecdir/*
+#%%add_debuginfo_skiplist %%_datadir
 
 %changelog
 * Mon Mar 20 2023 Artem Semenov <savoptik@altlinux.org> 1.5-alt2
