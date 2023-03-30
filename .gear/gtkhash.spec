@@ -63,15 +63,20 @@ It's designed to be an easy to use, graphical alternative to command-line tools 
 
 %install
 %makeinstall_std
+%find_lang %name
 
 %check
   %make_build check
 
-%files
+%files -f %name.lang
 %doc AUTHORS ChangeLog NEWS README.md
 %_bindir/*
-%_libexecdir/*
-%_datadir/*
+%_libdir/*
+%_datadir/icons/hicolor/*/apps/*
+%_datadir/glib-2.0/schemas/*
+%_datadir/caja/extensions/*
+%_datadir/applications/*.desktop
+%_datadir/metainfo/*
 #%%_man1dir/%%name.1*
 
 #%%set_verify_elf_method skip
